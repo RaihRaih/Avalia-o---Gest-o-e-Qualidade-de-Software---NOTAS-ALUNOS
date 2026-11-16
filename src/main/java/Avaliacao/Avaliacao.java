@@ -26,4 +26,15 @@ public class Avaliacao {
     public double calcularMedia() {
         return (nota1 + nota2) / 2.0;
     }
+
+    public String verificarSituacao(double media){
+        if (media >= 7){
+            return "Aprovado";
+        } else if (media >= 5){
+            return "Recuperação";
+        } else {
+            return "Reprovado";
+        }
+    
+    }
 }
