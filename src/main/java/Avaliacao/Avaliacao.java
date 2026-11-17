@@ -8,7 +8,8 @@ public class Avaliacao {
     public Avaliacao(double nota1, double nota2) {
 
         if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10) {
-            throw new IllegalArgumentException("Valor inválido");
+            double notaInvalida = nota1 < 0 || nota1 > 10 ? nota1 : nota2;
+            throw new IllegalArgumentException("NOTA INVÁLIDA: " + notaInvalida);
         }
 
         this.nota1 = nota1;
