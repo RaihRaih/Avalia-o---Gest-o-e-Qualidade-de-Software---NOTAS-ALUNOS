@@ -17,6 +17,14 @@ Funcionalidade: Cálculo da média e situação do aluno
     Quando eu calculo a média e verifico a situação
     Então a média deve ser 6
     E a situação deve ser "RECUPERAÇÃO"
+  
+# Reprovado
+  Cenário: Aluno de reprovado
+    Dado que o aluno tirou as notas 4 e 4
+    Quando eu calculo a média e verifico a situação
+    Então a média deve ser 4
+    E a situação deve ser "REPROVADO"
+
 
 #Erro de nota inválida
   Cenário: Nota inválida
