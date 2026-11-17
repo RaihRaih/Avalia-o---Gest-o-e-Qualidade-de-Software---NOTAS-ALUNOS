@@ -1,4 +1,4 @@
-package main.java.Avaliacao;
+package main.java.avaliacao;
 
 public class Avaliacao {
 
